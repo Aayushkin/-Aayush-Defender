@@ -1,70 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aayush-Defender v1.0 | Aayush-Tech07</title>
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Share Tech Mono', monospace;
-      background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
-      color: #00ff99;
-    }
-    .container {
-      max-width: 800px;
-      margin: 60px auto;
-      text-align: center;
-      padding: 20px;
-      border: 2px solid #00ff99;
-      border-radius: 16px;
-      background: rgba(0, 0, 0, 0.6);
-      box-shadow: 0 0 20px #00ff99;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.2em;
-      line-height: 1.5;
-    }
-    .download-btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 28px;
-      background: #00ff99;
-      color: #0f0f0f;
-      font-size: 1.2em;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    .download-btn:hover {
-      background: #00cc77;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #888;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aayush-Defender - A powerful tool for system defense on Windows and Linux">
+    <meta name="author" content="Aayush-Tech07">
+    <title>🔰 Aayush-Defender - Secure Your System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        .btn {
+            background-color: #1a73e8;
+            color: white;
+            font-size: 1.1rem;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .btn-secondary {
+            background-color: #34b7f1;
+        }
+        .btn-secondary:hover {
+            background-color: #1e90d3;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .platform-btns {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🔰 Aayush-Defender v1.0</h1>
-    <p>
-      A powerful terminal-based security tool for Linux systems.<br>
-      Set up firewalls, scan for rootkits, harden SSH, and monitor threats — all in one sleek shell script.<br><br>
-      Protect your system like a king. Built by <strong>Aayush-Tech07</strong>.
-    </p>
-    <a href="/tools/aayush-defender-v1.zip" class="download-btn" download>⏬ Download Now</a>
-    <footer>
-      <p>© 2025 Aayush-Tech07 | Built with 💻 in Kali Linux</p>
-    </footer>
-  </div>
+    <div class="container">
+        <h1>🔰 Aayush-Defender v1.0</h1>
+        <p>Protect your system from threats with Aayush-Defender, a powerful defense tool designed for both Windows and Linux. With features like malware scanning, firewall configuration, and more, it’s the perfect security tool for your device.</p>
+        
+        <div class="platform-btns">
+            <a href="#linux" class="btn">Download for Linux</a>
+            <a href="#windows" class="btn btn-secondary">Download for Windows</a>
+        </div>
+
+        <div id="linux">
+            <h2>Linux Version</h2>
+            <p>For Linux users, download the Aayush-Defender tool and run it from your terminal to scan your system and apply security hardening steps.</p>
+            <a href="https://github.com/Aayushkin/-Aayush-Defender/releases/download/untagged-73e6d8c31a78c7be5564/Aayush-Defender-Linux-v1.zip" class="btn">Download Linux Version</a>
+            <p><strong>Instructions:</strong></p>
+            <pre>
+# To use Aayush-Defender on Linux:
+1. Download the ZIP file.
+2. Extract the contents.
+3. Open a terminal in the extracted folder.
+4. Run the script with the following commands:
+    chmod +x aayush-defender.sh
+    sudo ./aayush-defender.sh
+            </pre>
+        </div>
+
+        <div id="windows">
+            <h2>Windows Version</h2>
+            <p>For Windows users, download the Aayush-Defender tool and run the PowerShell script to enhance your system's defense.</p>
+            <a href="https://github.com/Aayushkin/-Aayush-Defender/releases/download/untagged-73e6d8c31a78c7be5564/Aayush-Defender-Windows-v1.zip" class="btn btn-secondary">Download Windows Version</a>
+            <p><strong>Instructions:</strong></p>
+            <pre>
+# To use Aayush-Defender on Windows:
+1. Download the ZIP file.
+2. Extract the contents.
+3. Open PowerShell as Administrator.
+4. Run the script with the following commands:
+    Set-ExecutionPolicy RemoteSigned -Scope Process
+    .\Aayush-Defender.ps1
+            </pre>
+        </div>
+        
+        <footer>
+            <p>© 2025 Aayush-Tech07 | <a href="https://aayush-tech07.website">Visit our Website</a> | MIT License</p>
+        </footer>
+    </div>
 </body>
 </html>
